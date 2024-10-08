@@ -1,0 +1,584 @@
+[
+    {
+        "anno": 1895,
+        "articoli_esteri": 7.0,
+        "totale_articoli": 28,
+        "rapporto_esteri_totale": 0.25
+    },
+    {
+        "anno": 1896,
+        "articoli_esteri": 4.0,
+        "totale_articoli": 20,
+        "rapporto_esteri_totale": 0.2
+    },
+    {
+        "anno": 1898,
+        "articoli_esteri": 5.0,
+        "totale_articoli": 8,
+        "rapporto_esteri_totale": 0.625
+    },
+    {
+        "anno": 1903,
+        "articoli_esteri": 4.0,
+        "totale_articoli": 155,
+        "rapporto_esteri_totale": 0.025806451612903226
+    },
+    {
+        "anno": 1904,
+        "articoli_esteri": 11.0,
+        "totale_articoli": 266,
+        "rapporto_esteri_totale": 0.041353383458646614
+    },
+    {
+        "anno": 1905,
+        "articoli_esteri": 74.0,
+        "totale_articoli": 506,
+        "rapporto_esteri_totale": 0.14624505928853754
+    },
+    {
+        "anno": 1906,
+        "articoli_esteri": 116.0,
+        "totale_articoli": 537,
+        "rapporto_esteri_totale": 0.21601489757914338
+    },
+    {
+        "anno": 1907,
+        "articoli_esteri": 21.0,
+        "totale_articoli": 184,
+        "rapporto_esteri_totale": 0.11413043478260869
+    },
+    {
+        "anno": 1908,
+        "articoli_esteri": 58.0,
+        "totale_articoli": 329,
+        "rapporto_esteri_totale": 0.1762917933130699
+    },
+    {
+        "anno": 1909,
+        "articoli_esteri": 26.0,
+        "totale_articoli": 673,
+        "rapporto_esteri_totale": 0.03863298662704309
+    },
+    {
+        "anno": 1910,
+        "articoli_esteri": 10.0,
+        "totale_articoli": 432,
+        "rapporto_esteri_totale": 0.023148148148148147
+    },
+    {
+        "anno": 1911,
+        "articoli_esteri": 16.0,
+        "totale_articoli": 503,
+        "rapporto_esteri_totale": 0.03180914512922465
+    },
+    {
+        "anno": 1912,
+        "articoli_esteri": 6.0,
+        "totale_articoli": 464,
+        "rapporto_esteri_totale": 0.01293103448275862
+    },
+    {
+        "anno": 1913,
+        "articoli_esteri": 19.0,
+        "totale_articoli": 675,
+        "rapporto_esteri_totale": 0.028148148148148148
+    },
+    {
+        "anno": 1914,
+        "articoli_esteri": 20.0,
+        "totale_articoli": 685,
+        "rapporto_esteri_totale": 0.029197080291970802
+    },
+    {
+        "anno": 1915,
+        "articoli_esteri": 17.0,
+        "totale_articoli": 868,
+        "rapporto_esteri_totale": 0.019585253456221197
+    },
+    {
+        "anno": 1916,
+        "articoli_esteri": 6.0,
+        "totale_articoli": 372,
+        "rapporto_esteri_totale": 0.016129032258064516
+    },
+    {
+        "anno": 1917,
+        "articoli_esteri": 5.0,
+        "totale_articoli": 105,
+        "rapporto_esteri_totale": 0.047619047619047616
+    },
+    {
+        "anno": 1918,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 238,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1919,
+        "articoli_esteri": 14.0,
+        "totale_articoli": 355,
+        "rapporto_esteri_totale": 0.03943661971830986
+    },
+    {
+        "anno": 1920,
+        "articoli_esteri": 19.0,
+        "totale_articoli": 198,
+        "rapporto_esteri_totale": 0.09595959595959595
+    },
+    {
+        "anno": 1921,
+        "articoli_esteri": 2.0,
+        "totale_articoli": 144,
+        "rapporto_esteri_totale": 0.013888888888888888
+    },
+    {
+        "anno": 1922,
+        "articoli_esteri": 12.0,
+        "totale_articoli": 215,
+        "rapporto_esteri_totale": 0.05581395348837209
+    },
+    {
+        "anno": 1923,
+        "articoli_esteri": 15.0,
+        "totale_articoli": 227,
+        "rapporto_esteri_totale": 0.06607929515418502
+    },
+    {
+        "anno": 1924,
+        "articoli_esteri": 37.0,
+        "totale_articoli": 761,
+        "rapporto_esteri_totale": 0.04862023653088042
+    },
+    {
+        "anno": 1925,
+        "articoli_esteri": 11.0,
+        "totale_articoli": 565,
+        "rapporto_esteri_totale": 0.019469026548672566
+    },
+    {
+        "anno": 1926,
+        "articoli_esteri": 91.0,
+        "totale_articoli": 2625,
+        "rapporto_esteri_totale": 0.034666666666666665
+    },
+    {
+        "anno": 1927,
+        "articoli_esteri": 71.0,
+        "totale_articoli": 2590,
+        "rapporto_esteri_totale": 0.027413127413127413
+    },
+    {
+        "anno": 1928,
+        "articoli_esteri": 37.0,
+        "totale_articoli": 2251,
+        "rapporto_esteri_totale": 0.016437139049311416
+    },
+    {
+        "anno": 1929,
+        "articoli_esteri": 30.0,
+        "totale_articoli": 698,
+        "rapporto_esteri_totale": 0.04297994269340974
+    },
+    {
+        "anno": 1930,
+        "articoli_esteri": 4.0,
+        "totale_articoli": 521,
+        "rapporto_esteri_totale": 0.007677543186180422
+    },
+    {
+        "anno": 1931,
+        "articoli_esteri": 31.0,
+        "totale_articoli": 816,
+        "rapporto_esteri_totale": 0.03799019607843137
+    },
+    {
+        "anno": 1932,
+        "articoli_esteri": 48.0,
+        "totale_articoli": 1226,
+        "rapporto_esteri_totale": 0.03915171288743882
+    },
+    {
+        "anno": 1933,
+        "articoli_esteri": 86.0,
+        "totale_articoli": 1874,
+        "rapporto_esteri_totale": 0.04589114194236926
+    },
+    {
+        "anno": 1934,
+        "articoli_esteri": 56.0,
+        "totale_articoli": 1335,
+        "rapporto_esteri_totale": 0.041947565543071164
+    },
+    {
+        "anno": 1935,
+        "articoli_esteri": 31.0,
+        "totale_articoli": 776,
+        "rapporto_esteri_totale": 0.03994845360824742
+    },
+    {
+        "anno": 1936,
+        "articoli_esteri": 21.0,
+        "totale_articoli": 395,
+        "rapporto_esteri_totale": 0.053164556962025315
+    },
+    {
+        "anno": 1937,
+        "articoli_esteri": 198.0,
+        "totale_articoli": 1152,
+        "rapporto_esteri_totale": 0.171875
+    },
+    {
+        "anno": 1938,
+        "articoli_esteri": 187.0,
+        "totale_articoli": 1566,
+        "rapporto_esteri_totale": 0.1194125159642401
+    },
+    {
+        "anno": 1939,
+        "articoli_esteri": 88.0,
+        "totale_articoli": 1524,
+        "rapporto_esteri_totale": 0.05774278215223097
+    },
+    {
+        "anno": 1940,
+        "articoli_esteri": 166.0,
+        "totale_articoli": 2007,
+        "rapporto_esteri_totale": 0.08271051320378675
+    },
+    {
+        "anno": 1941,
+        "articoli_esteri": 57.0,
+        "totale_articoli": 1258,
+        "rapporto_esteri_totale": 0.04531001589825119
+    },
+    {
+        "anno": 1942,
+        "articoli_esteri": 52.0,
+        "totale_articoli": 983,
+        "rapporto_esteri_totale": 0.052899287894201424
+    },
+    {
+        "anno": 1943,
+        "articoli_esteri": 11.0,
+        "totale_articoli": 431,
+        "rapporto_esteri_totale": 0.025522041763341066
+    },
+    {
+        "anno": 1944,
+        "articoli_esteri": 37.0,
+        "totale_articoli": 310,
+        "rapporto_esteri_totale": 0.11935483870967742
+    },
+    {
+        "anno": 1945,
+        "articoli_esteri": 278.0,
+        "totale_articoli": 1463,
+        "rapporto_esteri_totale": 0.1900205058099795
+    },
+    {
+        "anno": 1946,
+        "articoli_esteri": 526.0,
+        "totale_articoli": 1917,
+        "rapporto_esteri_totale": 0.2743870631194575
+    },
+    {
+        "anno": 1947,
+        "articoli_esteri": 240.0,
+        "totale_articoli": 1046,
+        "rapporto_esteri_totale": 0.2294455066921606
+    },
+    {
+        "anno": 1948,
+        "articoli_esteri": 203.0,
+        "totale_articoli": 503,
+        "rapporto_esteri_totale": 0.40357852882703776
+    },
+    {
+        "anno": 1949,
+        "articoli_esteri": 44.0,
+        "totale_articoli": 97,
+        "rapporto_esteri_totale": 0.4536082474226804
+    },
+    {
+        "anno": 1950,
+        "articoli_esteri": 57.0,
+        "totale_articoli": 117,
+        "rapporto_esteri_totale": 0.48717948717948717
+    },
+    {
+        "anno": 1951,
+        "articoli_esteri": 43.0,
+        "totale_articoli": 98,
+        "rapporto_esteri_totale": 0.4387755102040816
+    },
+    {
+        "anno": 1952,
+        "articoli_esteri": 54.0,
+        "totale_articoli": 283,
+        "rapporto_esteri_totale": 0.19081272084805653
+    },
+    {
+        "anno": 1953,
+        "articoli_esteri": 66.0,
+        "totale_articoli": 290,
+        "rapporto_esteri_totale": 0.22758620689655173
+    },
+    {
+        "anno": 1954,
+        "articoli_esteri": 63.0,
+        "totale_articoli": 444,
+        "rapporto_esteri_totale": 0.14189189189189189
+    },
+    {
+        "anno": 1955,
+        "articoli_esteri": 59.0,
+        "totale_articoli": 277,
+        "rapporto_esteri_totale": 0.21299638989169675
+    },
+    {
+        "anno": 1956,
+        "articoli_esteri": 51.0,
+        "totale_articoli": 210,
+        "rapporto_esteri_totale": 0.24285714285714285
+    },
+    {
+        "anno": 1957,
+        "articoli_esteri": 98.0,
+        "totale_articoli": 375,
+        "rapporto_esteri_totale": 0.2613333333333333
+    },
+    {
+        "anno": 1958,
+        "articoli_esteri": 83.0,
+        "totale_articoli": 369,
+        "rapporto_esteri_totale": 0.22493224932249323
+    },
+    {
+        "anno": 1959,
+        "articoli_esteri": 69.0,
+        "totale_articoli": 396,
+        "rapporto_esteri_totale": 0.17424242424242425
+    },
+    {
+        "anno": 1960,
+        "articoli_esteri": 163.0,
+        "totale_articoli": 803,
+        "rapporto_esteri_totale": 0.20298879202988793
+    },
+    {
+        "anno": 1961,
+        "articoli_esteri": 113.0,
+        "totale_articoli": 737,
+        "rapporto_esteri_totale": 0.15332428765264586
+    },
+    {
+        "anno": 1962,
+        "articoli_esteri": 114.0,
+        "totale_articoli": 497,
+        "rapporto_esteri_totale": 0.22937625754527163
+    },
+    {
+        "anno": 1963,
+        "articoli_esteri": 139.0,
+        "totale_articoli": 494,
+        "rapporto_esteri_totale": 0.2813765182186235
+    },
+    {
+        "anno": 1964,
+        "articoli_esteri": 145.0,
+        "totale_articoli": 539,
+        "rapporto_esteri_totale": 0.2690166975881262
+    },
+    {
+        "anno": 1965,
+        "articoli_esteri": 63.0,
+        "totale_articoli": 303,
+        "rapporto_esteri_totale": 0.2079207920792079
+    },
+    {
+        "anno": 1966,
+        "articoli_esteri": 22.0,
+        "totale_articoli": 36,
+        "rapporto_esteri_totale": 0.6111111111111112
+    },
+    {
+        "anno": 1967,
+        "articoli_esteri": 16.0,
+        "totale_articoli": 35,
+        "rapporto_esteri_totale": 0.45714285714285713
+    },
+    {
+        "anno": 1968,
+        "articoli_esteri": 10.0,
+        "totale_articoli": 16,
+        "rapporto_esteri_totale": 0.625
+    },
+    {
+        "anno": 1969,
+        "articoli_esteri": 9.0,
+        "totale_articoli": 16,
+        "rapporto_esteri_totale": 0.5625
+    },
+    {
+        "anno": 1970,
+        "articoli_esteri": 11.0,
+        "totale_articoli": 20,
+        "rapporto_esteri_totale": 0.55
+    },
+    {
+        "anno": 1971,
+        "articoli_esteri": 21.0,
+        "totale_articoli": 93,
+        "rapporto_esteri_totale": 0.22580645161290322
+    },
+    {
+        "anno": 1972,
+        "articoli_esteri": 4.0,
+        "totale_articoli": 9,
+        "rapporto_esteri_totale": 0.4444444444444444
+    },
+    {
+        "anno": 1973,
+        "articoli_esteri": 4.0,
+        "totale_articoli": 5,
+        "rapporto_esteri_totale": 0.8
+    },
+    {
+        "anno": 1974,
+        "articoli_esteri": 7.0,
+        "totale_articoli": 9,
+        "rapporto_esteri_totale": 0.7777777777777778
+    },
+    {
+        "anno": 1975,
+        "articoli_esteri": 2.0,
+        "totale_articoli": 5,
+        "rapporto_esteri_totale": 0.4
+    },
+    {
+        "anno": 1977,
+        "articoli_esteri": 24.0,
+        "totale_articoli": 175,
+        "rapporto_esteri_totale": 0.13714285714285715
+    },
+    {
+        "anno": 1978,
+        "articoli_esteri": 47.0,
+        "totale_articoli": 211,
+        "rapporto_esteri_totale": 0.22274881516587677
+    },
+    {
+        "anno": 1979,
+        "articoli_esteri": 22.0,
+        "totale_articoli": 175,
+        "rapporto_esteri_totale": 0.12571428571428572
+    },
+    {
+        "anno": 1980,
+        "articoli_esteri": 1.0,
+        "totale_articoli": 95,
+        "rapporto_esteri_totale": 0.010526315789473684
+    },
+    {
+        "anno": 1981,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 107,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1982,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 96,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1983,
+        "articoli_esteri": 1.0,
+        "totale_articoli": 26,
+        "rapporto_esteri_totale": 0.038461538461538464
+    },
+    {
+        "anno": 1984,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 10,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1985,
+        "articoli_esteri": 1.0,
+        "totale_articoli": 112,
+        "rapporto_esteri_totale": 0.008928571428571428
+    },
+    {
+        "anno": 1986,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 35,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1987,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 32,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1988,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 49,
+        "rapporto_esteri_totale": 0.0
+    },
+    {
+        "anno": 1989,
+        "articoli_esteri": 10.0,
+        "totale_articoli": 59,
+        "rapporto_esteri_totale": 0.1694915254237288
+    },
+    {
+        "anno": 1990,
+        "articoli_esteri": 2.0,
+        "totale_articoli": 55,
+        "rapporto_esteri_totale": 0.03636363636363636
+    },
+    {
+        "anno": 1991,
+        "articoli_esteri": 11.0,
+        "totale_articoli": 78,
+        "rapporto_esteri_totale": 0.14102564102564102
+    },
+    {
+        "anno": 1992,
+        "articoli_esteri": 16.0,
+        "totale_articoli": 183,
+        "rapporto_esteri_totale": 0.08743169398907104
+    },
+    {
+        "anno": 1993,
+        "articoli_esteri": 12.0,
+        "totale_articoli": 215,
+        "rapporto_esteri_totale": 0.05581395348837209
+    },
+    {
+        "anno": 1994,
+        "articoli_esteri": 14.0,
+        "totale_articoli": 180,
+        "rapporto_esteri_totale": 0.07777777777777778
+    },
+    {
+        "anno": 1995,
+        "articoli_esteri": 5.0,
+        "totale_articoli": 205,
+        "rapporto_esteri_totale": 0.024390243902439025
+    },
+    {
+        "anno": 1996,
+        "articoli_esteri": 2.0,
+        "totale_articoli": 35,
+        "rapporto_esteri_totale": 0.05714285714285714
+    },
+    {
+        "anno": 1997,
+        "articoli_esteri": 0.0,
+        "totale_articoli": 23,
+        "rapporto_esteri_totale": 0.0
+    }
+]

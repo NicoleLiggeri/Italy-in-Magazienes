@@ -1,0 +1,877 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Italy in Magazines</title>
+    <script src='https://unpkg.com/intersection-observer@0.5.0/intersection-observer.js'></script>
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/scrollama/1.4.4/scrollama.js'></script>
+    <script src="https://d3js.org/d3.v4.min.js"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/PapaParse/5.3.0/papaparse.min.js"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="storytelling.css" >
+    <link rel="stylesheet" href="vis3/vis3.css">
+
+    <link rel='stylesheet' href='https://unpkg.com/leaflet@1.2.0/dist/leaflet.css'>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:300,400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700" rel="stylesheet">
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script type="module" src="./js/mapContol.js"></script>
+
+
+
+</head>
+<body>
+
+    <section id='scroll'>
+    
+        <div class="chart" style="height: 660.25px;">
+    
+            <div class="textarea" id="t1" style="padding-top: 247.5px">
+                <h1 class="headline text-center">Italy in Magazines:</h1>
+                <h1 class="subtitle text-center"> Voices and Echoes of the Twentieth Century</h1>
+            </div>
+        </div>
+    
+        <div class="container-fluid">
+            <div class="intro_text" style="vertical-align: center">
+                <p class="introduction">
+                    Starting from the Enlightenment, periodical publications have played a decisive role in the development of European culture, giving rise to a phenomenon that has reached such proportions and importance that the 20th century has been called the "century of magazines".
+                </p>
+    
+                <p class="introduction">
+                    In the early decades of the twentieth century, literary magazines reflected the spirit of an era, one in which the figure of the young intellectual, engaged and militant, who believed they could put their culture and art at the service of the country, spread across Italy.
+                    Concurrently with the crisis of positivism and the rise of new idealism, magazines became the medium for intervening in the present and accelerating the movement of the world, overlaying it with the needs for individual "vitality," and the aspiration for intense ideal and spiritual values.
+                </p>
+    
+                <p class="introduction">
+                    The culture of the new generations (roughly those born from 1880 onwards) appeared dominated by a strong critical tension that looked at the present, aiming to transform and overturn its characteristics. Criticism and essays came to the fore, seeking to measure themselves against the situation, opportunities, and trends of the present: a form of criticism that often did not settle for well-defined and limited objects, but aimed to suggest ideal perspectives and choices, ranging between ideology, politics, and philosophy, giving voice to the most complex dilemmas of the conscience.
+                </p>
+    
+                <p class="introduction">
+                    Ideology, criticism, and politics became closely intertwined: and the same reflection on literature became part of an intellectual battle in which ideas, forms, and projects seemed to move in a crowded and turbulent scene, with the actors being recognized by their roles filled with ideal strength, and by the tension that always animated their insights.
+                </p>
+    
+            </div>
+    
+        </div>
+    
+        <div class="scroll__graphic sticky" style="width: 100%; height: 349px;">
+            <div class="overlay">
+                <div class="chart2" id="map" style="width: 100%; height: 100vh;">
+                    <p></p>
+                </div>
+                <div id="info-panel" style="display: none; position: absolute; top: 50px; right: 20px; width: 300px; height: 400px; background: white; border: 1px solid #ccc; overflow-y: auto;">
+                    <h3 id="panel-title"></h3>
+                    <div id="panel-content"></div>
+                </div>
+            </div>
+        </div>
+    
+        
+        <div class='scroll__text'>
+            <div class='box step' data-step='1'>
+                <div class="card">
+                    <p>
+                        In the twentieth century, several cultural hubs became focal points for intellectual experiences.
+                    </p>
+                </div>
+    
+            </div>
+            <div class='box step' data-step='2'>
+                <div class="card">
+                    <p> However, the distribution of magazine centers shows a discrepancy across the peninsula.</p>
+                </div>
+            </div>
+            <div class='box step' data-step='2'>
+                <div class="card">
+                    <p> 
+                        In the early decades of the twentieth century, 80% of Italians were illiterate. Only 2% read periodicals daily. Those who wrote and read were educated Italians, wealthier than the average. The country’s elite was therefore concentrated in the North.
+                    <br><br>
+                    <span style="font-size: smaller;font-style: italic;">Click on the map to view the magazines</span>
+                    </p>
+                </div>
+            </div>
+            <div class='box step' data-step='3'>
+                <div class="card">
+                    <p>
+                        In the first thirty years of the century, alongside Milan, Florence stood out as an important cultural hub, open in various directions. From the experience of <span style="font-style: italic;">Voce</span>, continuing with internal opposition to fascism, realist literature, and engagement with European experiences.
+                    </p>
+                </div>
+                <img class="magaz" src="./La_Voce.jpg">
+            </div>
+    
+            <div class='box step' data-step='4'>
+                <div class="card">
+                    <p>
+                        Rome, too, was another major center of cultural life. It’s essential to mention <span style="font-style: italic;">La Ronda</span>, an expression of a desire for literary and ideological order.
+                    </p>
+                    <img class="magaz" src="https://www.animi.it/photo/ph7.jpg">
+                </div>
+            </div>
+            <div class='box step' data-step='5'>
+                <div class="card">
+                    <p>
+                        Though fewer in number, Southern Italian experiences also had a cultural impact, notably through the teachings of Benedetto Croce and intellectual antifascism.
+                    </p>
+                    <img src="https://bibliotecafrancoserantini.archiui.com/cataloga/media/bibliotecafrancoserantini/images/6/46002_ca_object_representations_media_645_large.jpg">
+                </div>
+            </div>
+            <div class='box step' style="visibility: hidden;" data-step='6'>
+                <div class="card"></div>
+            </div>
+    
+        </div>
+    
+    </section>
+    
+    <div class="transition" style="height: 1000px; background: #fcfbfb">
+        <div class="vis_transition">
+            What is the connection between Italian magazines and the European and global scene?
+        </div>
+    </div>
+    
+    <div>
+        <canvas id="myChart" style="margin: 10%"></canvas>
+        <div class="intro_text" style="vertical-align: center">
+            <p class="introduction">
+                While in the early part of the century, foreign influences were scarce in Italian magazines, post-war Italian culture seemed to establish new relationships and contacts with foreign literatures.
+            </p>
+    
+            <p class="introduction">
+                The most widespread culture in Italy was French. In the French culture of the 1940s and 1950s, <span style="font-style: italic;">existentialism</span> was in the spotlight, with a lively interweaving of philosophy, politics, and literature (think of Jean-Paul Sartre and Albert Camus). 
+                In France, a new form of novel, the <span style="font-style: italic;">nouveau roman</span>, emerged, which rejected the centrality of the human figure, as did the <span style="font-style: italic;">theatre of the absurd</span>, which also found great success in Italy.
+                Finally, structuralism arrived from France through the fascinating works of Roland Barthes.
+            </p>
+    
+            <p class="introduction">
+                In the 1950s, the resonances of the theater and narrative from England, particularly those of the angry men, reverberated through Italy. By the 1960s, American literature introduced fresh inspirations that explored destructive relationships with existence and the world. This thematic shift proved pivotal for the events of 1968, especially through the works of the <span style="font-style: italic;">Beat Generation</span> authors.
+            </p>
+    
+            <p class="introduction">
+                German culture played a crucial role in shaping intellectual discourse, offering significant insights, particularly through a Marxist lens. The influence of German thought became especially pronounced during the 1970s, when critical Marxism emerged as a powerful critique of established socio-political structures.
+            </p>
+    
+        </div>
+    </div>
+    
+    <div>
+        <canvas id="lineChart2" width="800" height="400" style="margin: 10%;"></canvas>
+    </div>
+    
+    <div class="transition" style="height: 1000px; background: #fcfbfb">
+        <div class="vis_transition">
+            What is the proportion between female authors and male authors?
+        </div>
+    </div>
+    
+    <div>
+    
+        <div class="container-fluid" style="display: flex; align-items: center; justify-content: space-between;">
+            <canvas id="pieChart" style="margin: 10%; width: 50%;" width="50%"></canvas>
+            <div class="intro_text" style="width: 50%;">
+                <p class="introduction">
+                    In the magazines of the 20th century, female writers had limited opportunities for expression: for every woman who published, eight male colleagues had more space than she did in the magazines. With the exception of specific cases such as the 'Almanacco della donna italiana,' the magazines were predominantly male.
+                </p>
+            </div>
+        </div>
+        <div class="intro_text">
+            <p class="introduction">
+                It is possible that female writers may have published under pseudonyms or anonymously; however, it is evident that the number of female writers becomes significant only in the second half of the century. It is important to highlight, in any case, that although the number of articles by Italian women tends to increase over time, the intellectual relationship with their male colleagues remains unfair.
+            </p>
+        </div>
+        <canvas id="lineChart" style="margin: 10%;"></canvas>
+    </div>
+    
+    <div class="end" style="height: 100vh;">
+    
+        <div>
+            <p class="final-CTA">Please visit the original journal catalogue developed by the University of Trento.</p><br><br>
+    
+            <a href="https://r.unitn.it/it/lett/circe"><p style="text-align:center"><button type="button" class="btn btn-sm btn-CTA">CIRCE catalogue</button></p></a>
+    
+        </div>
+    
+    </div>
+    <hr>
+    <br><br>
+    <div class="container-fluid end_details">
+        <div class="row">
+            <div class="col-md-3 col-sm-12"></div>
+            <div class="col-md-2 col-sm-12">
+                <span class="enddetailsheading">Project author:</span><br>Nicole Liggeri<br><br>
+                <span class="enddetailsheading">Course:</span><br>Information visualization 2023/2024<br><br> 
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <span class="enddetailsheading">Data Sources:</span>
+                <list>
+                    <ul>CIRCE: Catologo Informatico Riviste Culturali Europee</ul>
+                    <ul>WIKIDATA</ul>
+                    <ul>ACNP: Catalogo Italiano dei Periodici</ul>
+                    <br>
+                </list>
+            </div>
+            <div class="col-md-2 col-sm-12">
+                <span class="enddetailsheading">More Information:</span><br>Raw Data, documentation <a class="links" href="">here</a><br><br>
+                <span class="enddetailsheading">Project inspo:</span><br>The impatient list <a class="links" href="https://xujunjiejack.github.io/">here</a><br><br>        
+            </div>
+            <div class="col-md-3 col-sm-12"></div>
+        </div>
+    </div>
+    
+</body>
+    
+
+
+<script type="module" src="storytelling.js"></script>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjs/5.2.3/math.js"></script>
+
+
+
+<script src="https://unpkg.com/leaflet@1.3.4/dist/leaflet.js"
+        integrity="sha512-nMMmRyTVoLYqjP9hrbed9S+FzjZHW5gY1TWCHA5ckwXZBadntCNs8kEqAWdrb9O7rxbCaA4lKTIWjDXZxflOcA=="
+        crossorigin=""></script>
+        <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+        <script src="https://unpkg.com/leaflet.heat/dist/leaflet-heat.js"></script>
+        <script src="https://d3js.org/d3.v4.min.js"></script>
+
+
+<script src='https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-omnivore/v0.3.1/leaflet-omnivore.min.js'></script>
+
+
+<script src='https://unpkg.com/intersection-observer'></script>
+<script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+<script src="./js/leaflet-knn.js"></script>
+
+<script src="./js/d3-simple-slider.min.js"></script>
+
+<script>
+
+let $container = d3.select('#scroll');
+let $graphic = d3.select('.scroll__graphic');
+let $chart = d3.select('.chart');
+let $text = d3.select('.scroll__text');
+let $step = $text.selectAll('.step');
+var info_state = L.control();
+var IconStyleOne = L.icon({
+    iconUrl: './data/selected_icon.png'
+});
+var IconStyleTwo = L.icon({
+    iconUrl: './data/all_icons.png'
+});
+var legend = L.control({ position: 'bottomright' });
+
+// Constants for reusable values 
+const ZOOM_LEVEL = 6;
+const MAP_VIEW_COORDS = [41.9, 12.6];
+const TILE_LAYER_URL = 'https://api.mapbox.com/styles/v1/mapbox/light-v9/tiles/{z}/{x}/{y}?access_token=pk.eyJ1IjoiamVmZmV2ZXJoYXJ0MzgzIiwiYSI6IjIwNzVlOTA3ODI2MTY0MjM3OTgxMTJlODgzNjg5MzM4In0.QA1GsfWZccIB8u0FbhJmRg';
+const STEP_HEIGHT_RATIO = 0.15;
+const LEGEND_POSITION = 'bottomright';
+
+
+let map = L.map('map', { zoomControl: false }).setView(MAP_VIEW_COORDS, ZOOM_LEVEL);
+let center_layer, state_layer, heatmap_layer;
+const canvas = document.createElement('canvas');
+
+
+canvas.willReadFrequently = true; 
+
+const ctx = canvas.getContext('2d');
+
+
+function loadRegionData(regionName) {
+    d3.csv('./data/Viz1.csv', function (error, data) {
+    if (error) {
+        console.error('Errore nel caricamento del CSV:', error);
+        return;
+    }
+
+    
+    function decodeHTML(encodedStr) {
+        const textarea = document.createElement('textarea');
+        textarea.innerHTML = encodedStr;
+        return textarea.value;
+    }
+
+    
+    const filteredData = data.filter(row => row.Regione === regionName);
+
+    
+    filteredData.forEach(row => {
+        row.Nome_rivista = decodeHTML(row.Nome_rivista);
+    });
+
+    
+    updatePanelContent(filteredData);
+});
+
+}
+
+fetch('articoli_esteri_totali.json')
+.then(response => response.json())
+.then(data => {
+    const years = data.map(item => item.anno);
+    const ratios = data.map(item => item.rapporto_esteri_totale);
+
+    const ctx = document.getElementById('myChart').getContext('2d');
+    const myChart = new Chart(ctx, {
+        type: 'bar',
+        data: {
+            labels: years,
+            datasets: [{
+                label: 'Proportion of foreign articles / total',
+                data: ratios,
+                backgroundColor: 'rgba(54, 162, 235, 0.2)',
+                borderColor: 'rgba(54, 162, 235, 1)',
+                borderWidth: 1
+            }]
+        },
+        options: {
+            scales: {
+                y: {
+                    beginAtZero: true
+                }
+            }
+        }
+    });
+});
+fetch('data_visualization.json')
+    .then(response => response.json())
+    .then(data => {
+        
+        const lineCtx = document.getElementById('lineChart').getContext('2d');
+        new Chart(lineCtx, {
+            type: 'line',
+            data: {
+                labels: data.line_chart.years,
+                datasets: [{
+                    label: 'Proportion Women/Men',
+                    data: data.line_chart.donne_uomini_ratio,
+                    borderColor: 'purple',
+                    fill: false,
+                    tension: 0.1
+                }]
+            },
+            options: {
+                scales: {
+                    x: {
+                        title: {
+                            display: true,
+                            text: 'Year'
+                        }
+                    },
+                    y: {
+                        title: {
+                            display: true,
+                            text: 'Proportion Women/Men'
+                        }
+                    }
+                }
+            }
+        });
+
+        
+        const pieCtx = document.getElementById('pieChart').getContext('2d');
+        new Chart(pieCtx, {
+            type: 'pie',
+            data: {
+                labels: ['Women', 'Men'],
+                datasets: [{
+                    data: data.pie_chart.values,
+                    backgroundColor: ['#800080', '#d896ff']
+                }]
+            },
+            options: {
+                plugins: {
+                    tooltip: {
+                        callbacks: {
+                            label: function(tooltipItem) {
+                                const total = tooltipItem.dataset.data.reduce((a, b) => a + b, 0);
+                                const value = tooltipItem.raw;
+                                const percentage = ((value / total) * 100).toFixed(2);
+                                return `${tooltipItem.label}: ${percentage}%`;
+                            }
+                        }
+                    }
+                }
+            }
+        });
+    });
+
+L.tileLayer(TILE_LAYER_URL, {
+    attribution: 'Map data &copy; <a href="http://openstreetmap.org">OpenStreetMap</a> contributors, <a href="http://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, Imagery © <a href="http://mapbox.com">Mapbox</a>',
+    maxZoom: 10,
+    opacity: 0.7,
+}).addTo(map);
+
+
+map.scrollWheelZoom.disable();
+
+
+var scroller = scrollama();
+
+
+var info = L.control({ position: 'topright' });
+
+
+info.onAdd = function(map) {
+    this._div = L.DomUtil.create('div', 'info');
+    this.update();
+    return this._div;
+};
+
+
+function updatePanelContent(data) {
+    const panelContent = document.getElementById('panel-content');
+    panelContent.innerHTML = ''; 
+
+    data.forEach(item => {
+        
+        const cardHtml = `
+            <div class="card">
+                <h4><a href="${item.Url}" target="_blank">${item.Nome_rivista}</a></h4>
+                <p><strong>Period:</strong> ${item.Primo_anno} - ${item.Ultimo_anno}</p>
+            </div>
+        `;
+        panelContent.innerHTML += cardHtml;
+    });
+}
+
+
+function showPanel() {
+    const panel = document.getElementById('info-panel');
+    panel.style.display = 'block'; 
+}
+
+
+
+
+function handleResize() {
+    const stepHeight = Math.floor(window.innerHeight * STEP_HEIGHT_RATIO);
+    $step.style('height', `${stepHeight}px`);
+
+    const chartHeight = Math.floor(window.innerHeight);
+    $chart.style('height', `${chartHeight * 0.95}px`);
+
+    scroller.resize();
+}
+
+
+const REGIONS_GEOJSON_PATH = './data/limits_IT_regions.geojson';
+let regionsData;
+
+d3.json(REGIONS_GEOJSON_PATH, function(error, data) {
+    if (error) {
+        console.error('Error loading the regions GeoJSON:', error);
+        return;
+    }
+    regionsData = data; 
+    createStateLayer(); 
+});
+ function showRegionPanel(regionName) {
+     const panel = document.getElementById('info-panel');
+     panel.style.display = 'block';
+
+     document.getElementById('panel-title').innerText = regionName;
+
+     const panelContent = document.getElementById('panel-content');
+     panelContent.innerHTML = '';
+    
+     var loadDsv = d3.dsv(",", "text/csv;charset=ISO-8859-1");
+
+    
+     loadDsv('./data/Viz1.csv', function (error, data) {
+         if (error) {
+             console.error('Errore nel caricamento del CSV:', error);
+             return;
+         }
+         function decodeHTML(encodedStr) {
+             const textarea = document.createElement('textarea');
+             textarea.innerHTML = encodedStr;
+             return textarea.value;
+         }
+         const filteredData = data.filter(row => row['Regione'].trim() === regionName.trim());
+        
+         filteredData.forEach(row => {
+                 const card = document.createElement('div');
+                 card.classList.add('card');
+                
+                
+                
+                 row['Nome_rivista'] = decodeHTML(row['Nome_rivista']);
+                 card.innerHTML = `
+                     <h4><a href="${row['Url']}" target="_blank">${row['Nome_rivista']}</a></h4>
+                     <p><strong>Period:</strong> ${row['Primo_anno']} - ${row['Ultimo_anno']}</p>
+                 `;
+                
+                 panelContent.appendChild(card);
+             });
+
+     });
+ }
+
+
+
+
+
+function handleStepEnter(response) {
+    $step.classed('is-active', (d, i) => i === response.index);
+
+    
+    switch (response.index) {
+        case 0:
+             map.flyTo([41.9, 12.6], ZOOM_LEVEL);
+        map.removeLayer(center_layer);
+        if (map.hasLayer(heatmap_layer)) {
+                map.removeLayer(heatmap_layer);
+            };
+            console.log("uno")
+            break;    
+
+        case 1:
+            if (!center_layer) {
+                    map.flyTo([41.9, 12.6], ZOOM_LEVEL);
+                    createCenterLayer();
+                }
+            
+                center_layer.addTo(map);
+                closePanel()
+            console.log("due")
+            break;
+            
+
+        case 2:
+            map.flyTo([41.9, 12.6], ZOOM_LEVEL);
+            
+            createHeatmapLayer(); 
+            console.log("tre")
+            break;
+
+        case 3:
+            map.flyTo([43.7697955,11.2556404], ZOOM_LEVEL + 2);
+            createHeatmapLayer();
+            closePanel()
+            break;
+        case 4:
+            map.flyTo([41.8933203,12.4829321], ZOOM_LEVEL + 2);
+            createHeatmapLayer();
+            closePanel()
+            break;
+        case 5:
+            map.flyTo([40.8358846,14.2487679], ZOOM_LEVEL + 2);
+            closePanel();
+            center_layer.addTo(map);
+            map.addlayer
+            break;
+        case 6:{
+            map.flyTo([41.9, 12.6], ZOOM_LEVEL);
+            map.removeLayer(center_layer);
+            map.removeLayer(heatmap_layer);
+            closePanel();
+            break;
+
+        }
+        
+    }
+}
+
+
+
+
+
+
+
+function init() {
+    handleResize();
+
+    scroller.setup({
+        container: '#scroll',
+        graphic: '.scroll__graphic',
+        text: '.scroll__text',
+        step: '.scroll__text .box',
+        offset: 0.5,
+    }).onStepEnter(handleStepEnter);
+
+    window.addEventListener('resize', handleResize);
+}
+
+
+function createCenterLayer() {
+    d3.csv('./data/Viz1.csv', function(error, cityData) {
+        if (error) {
+            console.error('Error loading city data:', error);
+            return;
+        }
+
+        
+        const cityFeatures = cityData.map(row => turf.point([+row['Longitudine'], +row['Latitudine']], { name: row['Città'], region: row['Regione'] }));
+        const centerCollection = turf.featureCollection(cityFeatures);
+        center_layer = L.geoJson(centerCollection, {
+            onEachFeature: function(feature, layer) {
+                layer.bindPopup(feature.properties.name);
+            }
+        });
+    });
+}
+
+
+ function createHeatmapLayer() {
+     d3.csv('./data/Viz1.csv', function(error, cityData) {
+         if (error) {
+             console.error('Error loading city data:', error);
+             return;
+         }
+
+        
+         let regionCounts = {};
+
+        
+         cityData.forEach(function(row) {
+             let region = row['Regione'].trim(); 
+             region = region.replace(/ /g, "-"); 
+
+            
+             regionCounts[region] = (regionCounts[region] || 0) + 1;
+         });
+
+        
+         d3.json(REGIONS_GEOJSON_PATH, function(error, regionsData) {
+             if (error) {
+                 console.error('Error loading the regions GeoJSON:', error);
+                 return;
+             }
+
+            
+             heatmap_layer = L.geoJson(regionsData, {
+                 style: function(feature) {
+                    
+                     const regionName = feature.properties.reg_name.replace(/ /g, "-").trim();
+                     const count = regionCounts[regionName] || 0; 
+                     const color = getColorForCount(count); 
+                     return {
+                         fillColor: color,
+                         weight: 1,
+                         opacity: 0.65,
+                         color: '#fff',
+                         fillOpacity: 0.7,
+                     };
+                 },
+                 onEachFeature: function(feature, layer) {
+                    
+                     layer.on('click', function(e) {
+                         const regionName = feature.properties.reg_name;
+                         loadRegionData(regionName); 
+                         showPanel(); 
+                     });
+                 }
+             });
+
+            
+             map.on('layerremove', function(event) {
+                 if (event.layer === heatmap_layer) {
+                     closePanel(); 
+                 }
+             });
+
+             heatmap_layer.addTo(map); 
+         });
+     });
+ }
+
+
+function closePanel() {
+    
+    document.getElementById('info-panel').style.display = 'none';
+}
+
+
+function createStateLayer() {
+    
+}
+
+
+
+function getColorForCount(count) {
+    
+    if (count === 0) return null; 
+
+    if (count > 15) return '#4B0082'; 
+    else if (count > 10) return '#6A0DAD'; 
+    else if (count > 5) return '#800080'; 
+    else if (count > 3) return '#9932CC'; 
+    else if (count > 1) return '#BA55D3'; 
+    else return '#E6E6FA'; 
+}
+
+
+
+
+
+function loadCSVAndCreateChart() {
+    Papa.parse("./data/normalised_eu.csv", {
+        download: true,
+        header: true,
+        complete: function(results) {
+            
+            const data = results.data;
+            const years = [];
+            const datasets = {};
+
+            
+            data.forEach(row => {
+                years.push(row.Anno); 
+                Object.keys(row).forEach(country => {
+                    if (country !== 'Anno') {
+                        if (!datasets[country]) {
+                            datasets[country] = [];
+                        }
+                        datasets[country].push(parseFloat(row[country]) || 0); 
+                    }
+                });
+            });
+
+            
+            const initialCountry = "France";
+            const chartDatasets = Object.keys(datasets).map((country, index) => ({
+                label: country,
+                data: datasets[country],
+                fill: false,
+                borderColor: getColorForCountry(index),
+                tension: 0.1,
+                hidden: country !== initialCountry 
+            }));
+
+            
+            const ctx = document.getElementById('lineChart2').getContext('2d');
+            const lineChart = new Chart(ctx, {
+                type: 'line',
+                data: {
+                    labels: years,
+                    datasets: chartDatasets
+                },
+                options: {
+                    responsive: true,
+                    plugins: {
+                        legend: {
+                            display: true, 
+                            position: 'top',
+                            labels: {
+                                fontColor: '#333',
+                                usePointStyle: true
+                            },
+                            onClick: function(e, legendItem) {
+                                
+                                const index = legendItem.datasetIndex;
+                                const chart = this.chart;
+                                const meta = chart.getDatasetMeta(index);
+                                
+                                
+                                meta.hidden = meta.hidden === null ? !chart.data.datasets[index].hidden : null;
+                                chart.update();
+                            }
+                        },
+                        title: {
+                            display: true,
+                            text: 'Proportion of foreign signatures in Italian magazines compared to the total number of articles.'
+                        }
+                    },
+                    scales: {
+                        x: {
+                            title: {
+                                display: true,
+                                text: 'Year'
+                            }
+                        },
+                        y: {
+                            title: {
+                                display: true,
+                                text: 'Normalized frequency.'
+                            },
+                            beginAtZero: true
+                        }
+                    }
+                }
+            });
+
+            
+            setTimeout(() => {
+                
+                const legendItems = lineChart.legend.legendItems;
+                legendItems.forEach((legendItem, index) => {
+                    if (legendItem.text !== initialCountry) {
+                        lineChart.legend.options.onClick(null, legendItem);
+                    }
+                });
+            }, 500); 
+        }
+    });
+}
+
+
+function getColorForCountry(index) {
+    const colors = [
+        '#1E90FF', 
+        '#4169E1', 
+        '#6A5ACD', 
+        '#8A2BE2', 
+        '#7B68EE', 
+        '#32CD32', 
+        '#228B22', 
+        '#2E8B57'  
+    ];
+    return colors[index % colors.length]; 
+}
+
+
+
+
+
+
+
+
+
+
+
+d3.queue()
+    .defer(d3.csv, './data/Viz1.csv')
+    .await(readyToDraw);
+
+function readyToDraw(error, cityData) {
+    if (error) {
+        console.error('Error while loading datasets:', error);
+        return;
+    }
+
+    
+    if (!center_layer) {
+        createCenterLayer();
+    }
+
+    
+    info.addTo(map);
+
+    
+    init();
+}
+
+
+init();
+loadCSVAndCreateChart();
+
+
+</script>    

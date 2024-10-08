@@ -1,0 +1,196 @@
+
+.headline {
+    font-size: 80px;
+    /*padding-top: 100px;*/
+    padding-bottom: 40px;
+    font-family: Georgia;
+}
+
+.subtitle{
+    font-size: 24px;
+    font-family: Georgia;
+    padding-bottom: 64px;
+
+}
+
+.btn-secondary {
+    color: #5DA2D5;
+    border-color: #5DA2D5;
+    background-color: transparent;
+    font-family: "Roboto";
+}
+
+.btn-secondary:hover {
+    color: #5DA2D5;
+    border-color: #5DA2D5;
+    background-color: #5DA2D520;
+    font-family: "Roboto";
+}
+
+.active {
+    color: white !important;
+    border-color: #5DA2D5 !important;
+    background-color: #5DA2D5 !important;
+    font-family: "Roboto";
+}
+
+.author {
+    font-family: Georgia;
+}
+
+
+
+.intro_text{
+    padding-top: 120px;
+    padding-bottom: 120px;
+    /* width: 60vw; */
+    margin: 0  5%;
+    font-size: 20px;
+    line-height: 40px;
+    font-family: Georgia;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: circle !important;
+}
+
+li {
+    margin-left: 16px !important;
+}
+
+.introduction {
+    margin-top: 40px !important;
+    margin-bottom: 16px !important;
+}
+
+.step h3 {
+    font-family: Georgia;
+    font-size: 24px;
+    font-weight: 600;
+    line-height: 24px;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+
+.step p {
+    font-family: Georgia;
+    line-height: 24px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.card {
+    background: #FAFAFA;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+    padding: 16px 32px 24px 32px;
+}
+
+.scatter-bg {
+    background: #FAFAFA;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+    padding: 16px 32px 24px 32px;
+}
+
+.btn-group {
+    padding-left: 16px;
+}
+
+.final-CTA {
+    padding-top: 40vh;
+    font:30px Georgia;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-align: center;
+    line-height: 50px;
+}
+
+#bg-toggles {
+    height: 800px !important;
+    padding-top: 200px;
+}
+
+.btn-CTA {
+    color: white !important;
+    border-color: #5DA2D5 !important;
+    background-color: #5DA2D5 !important;
+    font-family: "Roboto" sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+
+    padding: 16px 32px 16px 32px;
+
+    border-radius: 40px;
+}
+
+
+
+.scroll__text {
+    padding-bottom: 600px;
+}
+
+
+
+.center_tooltip {
+    font-family: Georgia;
+    position: absolute;
+    background: #FAFAFA;
+    box-shadow: 0 2px 18px 0 rgba(0,0,0,0.18);
+    padding: 16px 32px 24px 32px;
+
+}
+.center_tooltip text{
+    font-size: 10px;
+    text-align: left;
+}
+
+.end_deatils{
+    font-family: Georgia;
+    font-weight: 300;
+}
+.enddetailsheading{
+    font-weight: 900;
+}
+
+
+
+#info-panel .card h4 {
+    margin-top: 0;
+    font-size: 16px;
+}
+#info-panel .card img {
+    max-width: 100%;
+    height: auto;
+}
+#info-panel {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 15px;
+    font-family: Arial, sans-serif;
+    background-color: #ffffff; /* Sfondo opaco */
+    border-radius: 8px; /* Angoli arrotondati */
+    opacity: 1; /* Assicurati che l'opacità sia 1 */
+    z-index: 1000; /* Sopra gli altri elementi */
+}
+.imgback{
+
+        /* The image used */
+        background-image: url("./La_Voce.jpg");
+      
+        /* Set a specific height */
+        min-height: 500px;
+      
+        /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+      
+}
+
+
+
